@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+    <!--Style-->
+    <link href="styles/Home.css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="icon" type="image/ico" href="img/hangman.png">
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header>
+      <h1>Hangman</h1>
+    </header>
+    <div class ="main">
+      <div>
+        <p id ="word">______</p>        
+      </div>
+      <div id="hangman">   
+        <svg x="0px" y="0px" viewBox="0 0 100 100">
+          <line id="part1" class="hangman" x1="20" y1="10" x2="20" y2="90" stroke-linecap="butt" stroke="black" stroke-dasharray ="100" stroke-width="8"/>
+          <line id="part2" class="hangman" x1="10" y1="20" x2="85" y2="20" stroke-dasharray ="100" stroke-linecap="butt" stroke="black" stroke-width="8"/>
+          <line id="part3" class="hangman" x1="20" y1="35" x2="35" y2="20" stroke-dasharray ="100" stroke-linecap="butt" stroke="black" stroke-width="5"/>
+          <line id="part4" class="hangman" x1="75" y1="24" x2="75" y2="35.2" stroke-dasharray ="100" stroke-linecap="butt" stroke="black" stroke-width="2"/>
+           <circle id="part5" class="hangman" cx="75" cy="42" r="7"/>
+           <line id="part6" class="hangman" x1="75" y1="48.8" x2="75" y2="70" stroke-dasharray ="100" stroke-linecap="butt" stroke="black" stroke-width="3"/>
+           <line id="part7" class="hangman" x1="75" y1="50" x2="85" y2="60" stroke-dasharray ="100" stroke-linecap="round" stroke="black" stroke-width="3"/>
+           <line id="part8" class="hangman" x1="75" y1="50" x2="65" y2="60" stroke-dasharray ="100" stroke-linecap="round" stroke="black" stroke-width="3"/>
+           <line id="part9" class="hangman" x1="75.5" y1="70" x2="82" y2="82" stroke-dasharray ="100" stroke-linecap="round" stroke="black" stroke-width="3"/>
+           <line id="part10" class="hangman" x1="74.5" y1="70" x2="68" y2="82" stroke-dasharray ="100" stroke-linecap="round" stroke="black" stroke-width="3"/>          
+        </svg>       
+      </div>
+    </div>
+    <div class="user_section">
+      <div class="section1">
+        <div id="shortcut"></div>
+        <div class="letters">
+          <span id="A" class="letter available">A</span><span id="B" class="letter available">B</span><span id="C" class="letter available">C</span><span id="D" class="letter available">D</span><span id="E" class="letter available">E</span><span id="F" class="letter available">F</span><span id="G" class="letter available">G</span><span id="H" class="letter available">H</span><span id="I" class="letter available">I</span><span id="J" class="letter available">J</span><span id="K" class="letter available">K</span><span id="L" class="letter available">L</span><span id="M" class="letter available">M</span><span id="N" class="letter available">N</span><span id="O" class="letter available">O</span><span id="P" class="letter available">P</span><span id="Q" class="letter available">Q</span><span id="R" class="letter available">R</span><span id="S" class="letter available">S</span><span id="T" class="letter available">T</span><span id="U" class="letter available">U</span><span id="V" class="letter available">V</span><span id="W" class="letter available">W</span><span id="X" class="letter available">X</span><span id="Y" class="letter available">Y</span><span id="Z" class="letter available">Z</span>
+        </div>
+      </div>
+      <div class="section2">
+        <div id="message">
+          <p>Select a letter !</p>
+        </div>
+        <div id="hint" class="hintnotrevealed">
+          <p id="hint_hidden">Hint</p>
+          <p id="hint_revealed">Hint ➤    One of the great houses in Westeros</p>
+        </div>        
+      </div>
+    </div>    
+    <footer>
+      <a class="reload" href="Home.html">Play again</a>
+    </footer>
+    <script src="script/Home.js"></script>
+  </body>
+  </html>
